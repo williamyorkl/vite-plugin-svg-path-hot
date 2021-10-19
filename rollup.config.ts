@@ -9,7 +9,7 @@ export default {
       format: "cjs",
     },
   ],
-  external: ["chalk", "http2-proxy"],
+  external: ["vite-plugin-svg-icons", "vite"],
   plugins: [
     terser({
       output: {

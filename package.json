@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/williamyorkl/vite-plugin-proxy-middleware.git"
+    "url": "git+https://github.com/williamyorkl/vite-plugin-svg-path-hot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/williamyorkl/vite-plugin-proxy-middleware/issues"
+    "url": "https://github.com/williamyorkl/vite-plugin-svg-path-hot/issues"
   },
-  "homepage": "https://github.com/williamyorkl/vite-plugin-proxy-middleware#readme",
+  "homepage": "https://github.com/williamyorkl/vite-plugin-svg-path-hot#readme",
   "dependencies": {
     "vite": "^2.6.5"
   },

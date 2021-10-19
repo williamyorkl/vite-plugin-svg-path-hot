@@ -1,7 +1,7 @@
 /**
  * 监听svg文件修改热更新
  */
-import type { Plugin, PluginOption } from "vite";
+import type { Plugin } from "vite";
 import { normalizePath } from "vite";
 import path from "path";
 import fs from "fs";
@@ -11,12 +11,9 @@ import type { ViteSvgIconsPlugin } from "vite-plugin-svg-icons";
 export interface VitePluginSvgPathHotOpt extends Partial<ViteSvgIconsPlugin> {
   /**
    * specify paths to inclue *.svg files
+   *  for example, if you set svgPath: ['']
    */
   svgPath: Array<string>;
-
-  /**
-   * specify main path to inclue *.svg files
-   */
 }
 
 const touch = function (path: string) {
@@ -123,8 +120,7 @@ export default (opts: VitePluginSvgPathHotOpt): Plugin[] => {
           type: "error",
           err: {
             name: "svg-missing",
-            message:
-              "若当前svg文件是用作icon图标，请确保其存放路径是在/icons目录，否则svg文件不生效",
+            message: `if current svg icons are being used as icons,please make sure that they are in the svgPath that you have set: ${svgPath}, or else the svg if won't work`,
             stack: "stack",
             id: transformStringArr(errSvgPathArr),
             plugin: "vite-plugin-svg-path-hot",
