@@ -3,6 +3,7 @@
     <h3>Component A: {{ msg }}</h3>
     <button @click="goNews">a button</button>
     <button @click="$router.go(-1)">返回</button>
+    <SvgIcon icon-class="svg3" />
   </div>
 </template>
 
@@ -11,12 +12,12 @@ export default {
   props: {
     msg: String,
   },
-  methods:{
-    goNews(){
-       this.$router.push({
-        path:'/news'
-      })
-    }
-}
-}
+  methods: {
+    goNews() {
+      this.$router.push({
+        path: "/news",
+      });
+    },
+  },
+};
 </script>
