@@ -1,7 +1,7 @@
 {
-  "name": "vite-plugin-proxy-middleware",
-  "version": "1.0.1",
-  "description": "a  vite plugin that solve the conflict problem between turning on vite proxy  and http2, you can use both http2 and proxy at the same time ;-)",
+  "name": "vite-plugin-svg-path-hot",
+  "version": "1.0.0",
+  "description": "A vite plugin that solve integrate vite-plugin-svg-icons and support hot svg files adding / deleting.",
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c"
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/williamyorkl/vite-plugin-svg-path-hot#readme",
   "dependencies": {
-    "vite": "^2.6.5"
+    "vite": "^2.6.5",
+    "vite-plugin-svg-icons": "^1.0.5"
   },
   "devDependencies": {
     "@types/node": "^16.10.3",
@@ -25,8 +26,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
     "tslib": "^2.3.1",
-    "typescript": "^4.4.3",
-    "vite-plugin-svg-icons": "^1.0.5"
+    "typescript": "^4.4.3"
   },
   "types": "./dist/index.d.ts"
 }
